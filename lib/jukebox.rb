@@ -1,7 +1,6 @@
 require 'pry'
 
-songs = [
-  "Phoenix - 1901",
+songs = ["Phoenix - 1901",
   "Tokyo Police Club - Wait Up",
   "Sufjan Stevens - Too Much",
   "The Naked and the Famous - Young Blood",

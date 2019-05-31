@@ -19,14 +19,19 @@ def help
 end
 
 def list(songs)
-  puts "1. Phoenix - 1901
-2. Tokyo Police Club - Wait Up
-3. Sufjan Stevens - Too Much
-4. The Naked and the Famous - Young Blood
-5. (Far From) Home - Tiga
-6. The Cults - Abducted
-7. Phoenix - Consolation Prizes
-8. Harry Chapin - Cats in the Cradle
-9. Amos Lee - Keep It Loose, Keep It Tight"
+  puts songs
   
+end
+
+def play(songs)
+  puts "Please enter a song name or number:"
+  song_choice = gets.chomp
+    songs.each_with_index do |song|
+      if song_choice >= 0 || song_choice <= 8
+        puts "PLaying song[index]"
+      elsif song_choice == song
+        puts "Playing #{song_choice}"
+      else
+        puts "Invalid input, please try again"
+    end
 end
